@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    --light-blue: #48c5ce;
+    --black: #000000;
+    --white: #ffffff;
+    --white-opacity: #ffffffbb;
+    --grey: #202121;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--black);
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    background-color: var(--light-blue);
+    text-align: center;
+    color: var(--white);
+    padding: 1rem;
+}
+
+.title {
+    font-size: 2.6rem;
+}
+
+main {
+    padding: 2rem;  
+    background-image: url('../images/people.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.form-container {
+    max-width: 300px;
+    background-color: var(--white-opacity);
+    padding: 2rem;
+    float: right;
+}
+
+.form-container h2 {
+    font-size: 1.6rem;
+}
+
+.form-container p {
+    font-size: 1.5rem;
+}
+
+.mb {
+    margin-bottom: 1.5rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+input[type="submit"] {
+    color: var(--white);
+    background-color: var(--light-blue);
+    font-weight: bold;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("../images/arrow.jpg");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+}
+
+footer {
+    background-color: var(--grey);
+    padding: 4rem;
+    text-align: center;
+}
+
+.picture {
+    width: 160px;
+}
+
+.description {
+    position: relative;
+    bottom: 2.3rem;
+    display: inline-block;
+    color: var(--white);
+    max-width: 40%;
+    margin-left: 4rem;
+    text-align: justify;
+}
+
+.description p, 
+.description h3 {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+.description h3 {
+    font-size: 2.5rem;
+}
+
+
+@media screen and (max-width: 874px) {
+    .description {
+        position: static;
+    }
+    .description h3 {
+        font-size: 2rem;
+    }
+    .description p {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width:665px) {
+    .title {
+        font-size: 2.2rem;
+    }
+    .form-container {
+        float: none;
+        margin: auto;
+        max-width: 90%;
+    }
+    .picture {
+        width: 15rem;
+    }
+    .description {
+        max-width: 80%;
+        margin: auto;
+        margin-top: 2rem;
+        text-align: justify;
+        display: block;
+    }
+    .description h3 {
+        font-size: 1.9rem;
+        text-align: center;
+    }
+    .description p {
+        font-size: 1.4rem;
+    }
+}
